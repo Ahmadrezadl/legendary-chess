@@ -1,3 +1,4 @@
+![LOGO](https://github.com/Ahmadrezadl/legendary-chess/blob/main/logo.png?raw=true)
 # Legendary Chess
 
 Welcome to Legendary Chess, an innovative chess game that brings a fresh twist to the traditional chess experience. Developed for the Android platform using GameMaker Studio 2024.2.0.132, Legendary Chess introduces new pieces with unique abilities, changing the way you think about and play chess.
@@ -25,6 +26,7 @@ E E E E E E E E
 P P P P P P P P
 I S A P K A S I
 ```
+![SETUP](https://github.com/Ahmadrezadl/legendary-chess/blob/main/board.png?raw=true)
 
 ## Getting Started
 
