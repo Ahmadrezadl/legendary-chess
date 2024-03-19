@@ -2,6 +2,9 @@
 # Legendary Chess
 
 Welcome to Legendary Chess, an innovative chess game that brings a fresh twist to the traditional chess experience. Developed for the Android platform using GameMaker Studio 2024.2.0.132, Legendary Chess introduces new pieces with unique abilities, changing the way you think about and play chess.
+You can watch develop steps video on:
+https://youtu.be/zXaBcYYyYUM?si=TDeSW-H_WiNmQaJV
+(English subtitle available)
 
 ## Features
 
