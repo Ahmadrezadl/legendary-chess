@@ -29,7 +29,7 @@ function check_action(piece_tile,dest_tile){
 			for(var _j = -1;_j <= 1;_j++){
 				try{
 					var _piece = obj_game_manager.current_state[_row + _i][_col + _j];
-					if _piece != noone and _piece.type == shield
+					if _piece != noone and _piece.type == shield and _piece.team = dest_tile.team
 						return Action.NONE;
 				}
 				catch(e){
