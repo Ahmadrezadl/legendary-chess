@@ -12,7 +12,8 @@ https://youtu.be/zXaBcYYyYUM?si=TDeSW-H_WiNmQaJV
   - **Imp (I)**: Moves 1 square in any direction or jumps over other pieces (like a frog) for up to 7 tiles.
   - **Shield (S)**: Moves 1 square in any direction and protects adjacent squares.
   - **Archer (A)**: Moves 1 square in any direction and attacks pieces 2 tiles away.
-  - **Phoenix (P)**: Moves like a queen. If captured, it rebirths once the tile it was captured on becomes empty.
+  - **Phoenix (P)**: Moves like a queen. If captured, it rebirths once the tile it was captured on becomes empty. (
+Phoenix can be permanently killed by the enemy archer and the enemy phoenix.)
   - **King (K)**: Moves 1 square in any direction. The game ends if the king is captured.
   - **Pawn (P)**: Moves 1 in any direction, or 2 squares forward if there are no pieces directly in front of it.
 
