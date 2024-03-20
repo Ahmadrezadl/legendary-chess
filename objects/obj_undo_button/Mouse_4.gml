@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+obj_game_manager.selected_tile = noone;
 
 while ds_stack_size(obj_game_manager.history) == 1
 	return;
