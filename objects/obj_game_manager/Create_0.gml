@@ -35,10 +35,11 @@ function complete_turn(){
 	current_state[turn] = 1 - current_state[turn];
 }
 
-function kill(tile){
+function kill(tile,killer){
 	piece = current_state[tile.row][tile.col]
 	array_push(current_state[death_pieces],piece);
-	if(piece.type = phoenix){
+
+	if(killer.type != archer and killer.type != phoenix and piece.type = phoenix){
 		current_state[eggs][piece.team] = {row: tile.row, col: tile.col};
 	}
 }
@@ -51,7 +52,7 @@ function select(tile){
 			ds_stack_push(history,variable_clone(current_state));
 
 			if current_state[tile.row][tile.col] != noone
-				kill(tile)
+				kill(tile,selected_tile.piece)
 			current_state[tile.row][tile.col] = current_state[selected_tile.row][selected_tile.col];
 			current_state[selected_tile.row][selected_tile.col] = noone;
 			
@@ -71,7 +72,7 @@ function select(tile){
 			ds_stack_push(history,variable_clone(current_state));
 
 			if current_state[tile.row][tile.col] != noone
-				kill(tile)
+				kill(tile,selected_tile.piece)
 			current_state[tile.row][tile.col] = current_state[selected_tile.row][selected_tile.col];
 			current_state[tile.row][tile.col] = noone;
 			complete_turn();
