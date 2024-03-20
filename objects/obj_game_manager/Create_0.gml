@@ -1,5 +1,4 @@
-/// @description Insert description here
-// rowou can write your code in this editor
+
 window_set_size(room_width, room_height);
 surface_resize(application_surface, room_width, room_height);
 display_set_gui_size(room_width, room_height);
@@ -44,18 +43,25 @@ function kill(tile,killer){
 	}
 }
 
-function select(tile){
-	if selected_tile {
+
+function select(tile) {
+	show_debug_message("1")
+	if selected_tile != noone {
+			show_debug_message("2")
+
 		var _action = check_action(selected_tile,tile);
 		if _action = Action.MOVE
 		{
+				show_debug_message("3")
+
 			ds_stack_push(history,variable_clone(current_state));
 
 			if current_state[tile.row][tile.col] != noone
 				kill(tile,selected_tile.piece)
 			current_state[tile.row][tile.col] = current_state[selected_tile.row][selected_tile.col];
 			current_state[selected_tile.row][selected_tile.col] = noone;
-			
+				show_debug_message("4")
+
 			for(var _i = 0;_i < 2;_i++){
 				var _egg = current_state[eggs][_i];
 				if _egg != noone and _egg.row = selected_tile.row and _egg.col == selected_tile.col
@@ -85,6 +91,7 @@ function select(tile){
 		}
 	}
 	else {
+		show_debug_message("10")
 		if tile.piece != noone
 			selected_tile = tile;
 	}

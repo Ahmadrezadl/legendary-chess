@@ -27,9 +27,13 @@ function check_action(piece_tile,dest_tile){
 		var _col = dest_tile.col;
 		for(var _i = -1;_i <= 1;_i++){
 			for(var _j = -1;_j <= 1;_j++){
-				var _piece = obj_game_manager.current_state[_row][_col];
-				if _piece != noone and _piece.type == shield
-					return Action.NONE;
+				try{
+					var _piece = obj_game_manager.current_state[_row + _i][_col + _j];
+					if _piece != noone and _piece.type == shield
+						return Action.NONE;
+				}
+				catch(e){
+				}
 			}
 		}
 	}
