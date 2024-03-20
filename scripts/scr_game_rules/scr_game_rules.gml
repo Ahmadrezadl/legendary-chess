@@ -43,15 +43,23 @@ function check_action(piece_tile,dest_tile){
 	if piece_tile.piece.type = pawn {
 		
 		// Move 1 in any direction
-		if abs(piece_tile.row - dest_tile.row) <= 1 and abs(piece_tile.col - dest_tile.col) <= 1
+		if dest_tile.piece == noone
+		{
+			if abs(piece_tile.row - dest_tile.row) <= 1 and abs(piece_tile.col - dest_tile.col) <= 1
 			return Action.MOVE;
+		}
+		else{
+			if abs(piece_tile.row - dest_tile.row) == 1 and abs(piece_tile.col - dest_tile.col) == 1{
+				return Action.MOVE;
+			}
+		}
 		
 		// Move 2 forward
 		if piece_tile.col == dest_tile.col {
-			if piece_tile.piece.team == 0 and piece_tile.row - 2 == dest_tile.row and dest_tile.piece = noone
+			if piece_tile.piece.team == 0 and piece_tile.row - 2 == dest_tile.row and dest_tile.piece = noone and obj_game_manager.current_state[piece_tile.row - 1][piece_tile.col] == noone
 				return Action.MOVE;
 			
-			if piece_tile.piece.team == 1 and piece_tile.row + 2 == dest_tile.row and dest_tile.piece = noone
+			if piece_tile.piece.team == 1 and piece_tile.row + 2 == dest_tile.row and dest_tile.piece = noone and obj_game_manager.current_state[piece_tile.row + 1][piece_tile.col] == noone
 				return Action.MOVE;
 		}
 			
