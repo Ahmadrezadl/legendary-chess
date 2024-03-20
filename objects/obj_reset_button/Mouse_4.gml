@@ -1,4 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-instance_create_depth(0,0,0,obj_reseter)
+obj_game_manager.selected_tile = noone;
+instance_create_depth(0,0,0,obj_reseter);
