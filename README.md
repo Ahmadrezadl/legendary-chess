@@ -38,14 +38,10 @@ I S A P K A S I
 
 ## Getting Started
 
-### Prerequisites
-
-- Android device with support for GameMaker Studio games.
-
 ### Installation
 
-- Download the APK from the releases section.
-- Install it on your Android device.
+- Download the APK or EXE from the releases section.
+- Install it on your Android or Windows device.
 - Open Legendary Chess and enjoy a new chess experience.
 
 ## Contributing
