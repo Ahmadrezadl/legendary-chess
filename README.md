@@ -17,7 +17,7 @@ https://youtu.be/zXaBcYYyYUM?si=TDeSW-H_WiNmQaJV
   - **Phoenix (P)**: Moves like a queen. If captured, it rebirths once the tile it was captured on becomes empty. (
     Phoenix can be permanently killed by the enemy archer and the enemy phoenix.)
   - **King (K)**: Moves 1 square in any direction. The game ends if the king is captured.
-  - **Pawn (P)**: Moves 1 in any direction, or 2 squares forward if there are no pieces directly in front of it. Can attack diagonal
+  - **Pawn (p)**: Moves 1 in any direction, or 2 squares forward if there are no pieces directly in front of it. Can attack diagonal
 
 - **No Check or Mate**: The game focuses on strategic placement and elimination rather than traditional check and mate.
 
@@ -25,12 +25,12 @@ https://youtu.be/zXaBcYYyYUM?si=TDeSW-H_WiNmQaJV
 
 ```
 I S A P K A S I
-P P P P P P P P
+p p p p p p p p
 E E E E E E E E
 E E E E E E E E
 E E E E E E E E
 E E E E E E E E
-P P P P P P P P
+p p p p p p p p
 I S A P K A S I
 ```
 
